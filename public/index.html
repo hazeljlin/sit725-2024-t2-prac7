@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Food Ratings</title>
+  <!-- Import Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Cat Food Ratings</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#products">Products</a></li>
+        <li><a href="#add-product">Add Product</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="container">
+      <h1>Find the Best Cat Food</h1>
+      <p>Rate and review your favorite cat food brands</p>
+      <a href="#products" class="btn-large waves-effect waves-light">Explore Products</a>
+    </div>
+  </div>
+
+  <!-- Cat Food Products Section -->
+  <div id="products" class="container">
+    <h2>Cat Food Products</h2>
+    <div id="card-section" class="row">
+      <!-- Dynamic content will be inserted here -->
+    </div>
+  </div>
+
+  <!-- Add Product Section -->
+  <div id="add-product" class="container">
+    <h2>Add a New Product</h2>
+    <form id="add-product-form">
+      <div class="input-field">
+        <input type="text" id="title" required>
+        <label for="title">Product Name</label>
+      </div>
+      <div class="input-field">
+        <input type="text" id="brand" required>
+        <label for="brand">Brand</label>
+      </div>
+      <div class="input-field">
+        <input type="text" id="image" required>
+        <label for="image">Image URL</label>
+      </div>
+      <div class="input-field">
+        <textarea id="description" class="materialize-textarea" required></textarea>
+        <label for="description">Description</label>
+      </div>
+      <button type="submit" class="btn waves-effect waves-light">Add Product</button>
+    </form>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="container">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <div class="input-field">
+        <input type="text" id="name" required>
+        <label for="name">Name</label>
+      </div>
+      <div class="input-field">
+        <input type="email" id="email" required>
+        <label for="email">Email</label>
+      </div>
+      <div class="input-field">
+        <textarea id="message" class="materialize-textarea" required></textarea>
+        <label for="message">Message</label>
+      </div>
+      <button type="submit" class="btn waves-effect waves-light">Send</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Cat Food Ratings</h5>
+          <p class="grey-text text-lighten-4">Helping you find the best food for your feline friend.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Import jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Import Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+

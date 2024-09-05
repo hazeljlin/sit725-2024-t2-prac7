@@ -1,0 +1,32 @@
+{
+  "name": "sit725-2024-t2-prac6",
+  "version": "1.0.0",
+  "description": "A cat food rating app for SIT725 Week 6 practice.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hazeljlin/sit725-2024-t2-prac4.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "Materialize",
+    "HTML",
+    "JS",
+    "CSS"
+  ],
+  "author": "hazeljlin",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^5.1.1",
+    "express": "^4.17.1",
+    "mocha": "^10.7.3",
+    "mongoose": "^8.5.4",
+    "request": "^2.88.2",
+    "socket.io": "^4.7.5"
+  }
+}
